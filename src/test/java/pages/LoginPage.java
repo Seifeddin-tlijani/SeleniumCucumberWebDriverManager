@@ -15,6 +15,8 @@ public class LoginPage extends BrowserDriver {
 
     public static String login_btn_xpath="//*[@id=\"second_form\"]/input";
 
+    public  static  String newregister_btn_id="NewRegistration";
+
 
     public static void sendkeys_username() throws InterruptedException{
         driver.findElement(By.id(username_text_id)).sendKeys("tlijaniseif86@gmail.com");
@@ -30,6 +32,10 @@ public class LoginPage extends BrowserDriver {
         driver.findElement(By.xpath(login_btn_xpath)).click();
     }
 
+
+    public static void click_newregister_btn(){
+        driver.findElement(By.id(newregister_btn_id)).click();
+    }
 
 
 }
